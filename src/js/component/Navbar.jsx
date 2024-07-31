@@ -1,12 +1,9 @@
 import React, { useState } from 'react';
-
 const MyNavbar = () => {
   const [isOpen, setIsOpen] = useState(false);
-
   const toggleNavbar = () => {
     setIsOpen(!isOpen);
   };
-
   return (
     <nav className="navbar">
       <div className="navbar-brand">Iniciar Bootstrap</div>
