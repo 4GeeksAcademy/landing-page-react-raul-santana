@@ -1,0 +1,144 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+  }
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #242424;
+    padding: 1rem;
+    color: white;
+    position: relative;
+  }
+  .navbar-brand {
+    font-size: 1.7rem;
+    color: aliceblue;
+  }
+  .navbar-links {
+    display: flex;
+    align-items: center;
+    margin-left: auto; 
+  }
+  .navbar-link {
+    color: white;
+    margin-left: 1rem;
+    text-decoration: none;
+  }
+  .navbar-link:hover {
+    text-decoration: underline;
+  }
+  .navbar-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+  }
+  .navbar-toggle span {
+    background-color: white;
+    height: 2px;
+    margin: 3px 0;
+    width: 25px;
+  }
+  @media (max-width: 768px) {
+    .navbar-links {
+      display: none;
+      flex-direction: column;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      width: 100%;
+      background-color: #343a40;
+      text-align: center;
+      transition: max-height 0.3s ease-in-out;
+      max-height: 0;
+      overflow: hidden;
+    }
+    .navbar-links.show {
+      display: flex;
+      max-height: 200px; 
+    }
+    .navbar-link {
+      margin: 1rem 0;
+    }
+    .navbar-toggle {
+      display: flex;
+    }
+  }
+  .jumbotron {
+    background-color: #e9ecef;
+    padding: 2rem 1rem;
+    text-align: center;
+  }
+  .jumbotron h1 {
+    font-size: 2.5rem;
+  }
+  .jumbotron p {
+    font-size: 1.25rem;
+    margin-bottom: 1.5rem;
+  }
+  .jumbotron .btn {
+    padding: 0.75rem 1.5rem;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 0.25rem;
+  }
+  .container {
+    max-width: 1200px; 
+    margin: 0 auto;
+    padding: 2rem 1rem;
+  }
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -15px; 
+  }
+  .col-md-3 {
+    position: relative;
+    width: 100%;
+    padding: 0 15px;
+    flex: 0 0 25%; 
+    max-width: 25%; 
+  }
+  .card {
+    border: 1px solid #ddd;
+    border-radius: 0.25rem;
+    margin-bottom: 1.5rem;
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    overflow: hidden; 
+  }
+  .card-img-top {
+    width: 100%;
+    height: 200px; 
+    object-fit: cover; 
+    border-bottom: 1px solid #ddd;
+  }
+  .card-body {
+    padding: 1.5rem; 
+  }
+  .card-title {
+    font-size: 1.5rem; 
+    margin-bottom: 1rem; 
+  }
+  .card-text {
+    font-size: 1rem; 
+    margin-bottom: 1.5rem; 
+  }
+  .card .btn {
+    display: inline-block;
+    padding: 0.75rem 1.5rem; 
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 0.25rem;
+    font-size: 1rem; 
+  }
+  @media (max-width: 768px) {
+    .col-md-3 {
+      flex: 0 0 100%;
+      max-width: 100%; 
+    }
+  }
