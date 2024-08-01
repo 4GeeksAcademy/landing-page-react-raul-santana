@@ -8,7 +8,7 @@ const MyCard = () => (
         <p className="card-text">
           Esta película la tuve de pequeño en formato VHS y sin duda, para mí, es una de las mejores películas que han hecho de dibujos en toda la historia.
         </p>
-        <a href="#" className="btn">Para saber más</a>
+        <a href="https://www.youtube.com/watch?v=-O7E21ZWm2E" target="_blank" rel="noopener noreferrer"className="btn">Para saber más</a>
       </div>
     </div>
   </div>
